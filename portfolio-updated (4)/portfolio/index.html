@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0908" />
+  <meta name="description" content="Fortune Omondi — software developer building practical, efficient and scalable software solutions." />
+  <title>Fortune Quinton | Software Developer</title>
+  <script>
+    // Apply the saved (or system) theme before first paint to avoid a flash.
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Fortune Omondi home">
+      <span class="brand-mark">FQ</span>
+      <span class="brand-copy"><strong>FORTUNE Omondi</strong><small>SOFTWARE DEVELOPER</small></span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode" title="Toggle light / dark mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <a class="cv-button" href="#contact">Let's Connect <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-orbit"></div>
+      <div class="hero-copy glass reveal">
+        <p class="eyebrow"><span></span> HELLO, I'M</p>
+        <h1>Fortune <span>Omondi</span></h1>
+        <p class="role">SOFTWARE DEVELOPER <i></i></p>
+        <p class="intro">I build practical, efficient and scalable software solutions. From web applications to desktop tools, I turn ideas into real products.</p>
+        <div class="service-list">
+          <span><b>⌘</b> Web Apps</span><span><b>▣</b> Desktop Apps</span><span><b>▤</b> Databases</span><span><b>⚙</b> Automation</span>
+        </div>
+        <div class="hero-actions"><a class="button button-gold" href="#projects">View My Projects <span>→</span></a><a class="button button-outline" href="#contact">Get In Touch <span>✉</span></a></div>
+      </div>
+      <div class="portrait-area" aria-label="Portrait placeholder">
+        <div class="portrait-placeholder">
+          <img src="images/FortuneOmondi.png" alt="FortuneOmondi">
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard section-wrap">
+      <article class="glass panel about-panel reveal" id="about" data-tablet="tpl-about" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open About Me">
+        <p class="eyebrow">ABOUT ME</p><h2>Curiosity into <em>creation.</em></h2>
+        <p class="body-copy">I'm a self-taught developer with a passion for technology, problem solving and building useful products. I enjoy working with modern web technologies, creating clean and maintainable code, and continuously learning new skills.</p>
+        <ul class="detail-list">
+          <li><span>⌖</span> Kisumu, Kenya</li>
+          <li><span>◇</span> BSc Computer Technology — Murang’a University of Technology</li>
+          <li><span>⌘</span> Open to opportunities</li>
+        </ul>
+        <span class="card-hint">Read my story <i>↗</i></span>
+        <div class="signature">F. Omondi</div>
+      </article>
+
+      <div class="middle-column">
+        <article class="glass panel skills-panel reveal" id="skills" data-tablet="tpl-skills" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open My Skills">
+          <p class="eyebrow">SKILLS & TECHNOLOGIES</p><h2>Tools I work with</h2>
+          <div class="skill-grid">
+            <span class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy"> HTML5</span>
+            <span class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy"> CSS3</span>
+            <span class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy"> JavaScript</span>
+            <span class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy"> Node.js</span>
+            <span class="skill"><img class="adapt" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" loading="lazy"> Express</span>
+            <span class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" loading="lazy"> MongoDB</span>
+            <span class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" loading="lazy"> MySQL</span>
+            <span class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="" loading="lazy"> Electron</span>
+            <span class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy"> Git</span>
+            <span class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="" loading="lazy"> Linux</span>
+          </div>
+          <span class="card-hint">See all skills <i>↗</i></span>
+        </article>
+        <article class="glass stats-panel reveal" id="experience" data-tablet="tpl-experience" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Open Professional Experience">
+          <div class="stats-head"><p class="eyebrow">EXPERIENCE</p><span class="card-hint">View experience <i>↗</i></span></div>
+          <div class="stats-grid">
+            <div><strong>5+</strong><span>Projects Built</span></div><div><strong>2+</strong><span>Years Learning</span></div>
+            <div><strong>100%</strong><span>Self-Driven</span></div><div><strong>∞</strong><span>More to Build</span></div>
+          </div>
+        </article>
+      </div>
+
+      <article class="glass panel projects-panel reveal" id="projects">
+        <p class="eyebrow">FEATURED PROJECTS</p><h2>Selected work</h2>
+        <button type="button" class="project-row" data-tablet="tpl-hexafarms" aria-haspopup="dialog">
+          <span class="project-logo"><img src="images/hexafarms-emblem.png" alt="HexaFarms logo" loading="lazy"></span><span class="project-info"><strong>HexaFarms</strong><small>Farm management with livestock, crops and inventory tracking.</small></span><span class="project-arrow">↗</span>
+        </button>
+        <button type="button" class="project-row" data-tablet="tpl-hexafleet" aria-haspopup="dialog">
+          <span class="project-logo dark"><img src="images/hexafleet-emblem.png" alt="HexaFleet logo" loading="lazy"></span><span class="project-info"><strong>HexaFleet</strong><small>Vehicle management, insurance reminders and driver tracking.</small></span><span class="project-arrow">↗</span>
+        </button>
+        <button type="button" class="project-row" data-tablet="tpl-hexapay" aria-haspopup="dialog">
+          <span class="project-logo"><img src="images/hexapay-emblem.png" alt="HexaPay logo" loading="lazy"></span><span class="project-info"><strong>HexaPay</strong><small>HR and payroll system designed for small businesses.</small></span><span class="project-arrow">↗</span>
+        </button>
+        <button type="button" class="project-row" data-tablet="tpl-hexaweigh" aria-haspopup="dialog">
+          <span class="project-logo"><img src="images/hexaweigh-emblem.png" alt="HexaWeigh logo" loading="lazy"></span><span class="project-info"><strong>HexaWeigh</strong><small>Weighbridge management software for truck weighing, tickets and records.</small></span><span class="project-arrow">↗</span>
+        </button>
+        <button type="button" class="project-row" data-tablet="tpl-hexalog" aria-haspopup="dialog">
+          <span class="project-logo"><img src="images/hexalog-emblem.png" alt="HexaLog logo" loading="lazy"></span><span class="project-info"><strong>HexaLog</strong><small>Business logging, orders, stock and record management.</small></span><span class="project-arrow">↗</span>
+        </button>
+      </article>
+    </section>
+
+    <section class="marquee-section section-wrap" aria-label="The Hexa product family">
+      <img class="marquee-brand" src="images/hexa-wordmark.png" alt="Hexa">
+      <p class="eyebrow">THE HEXA FAMILY</p>
+      <div class="marquee">
+        <div class="marquee-track">
+          <div class="marquee-group"><div class="marquee-item"><img src="images/hexafarms-wordmark.png" alt="HexaFarms"></div><div class="marquee-item"><img src="images/hexafleet-wordmark.png" alt="HexaFleet"></div><div class="marquee-item"><img src="images/hexapay-wordmark.png" alt="HexaPay"></div><div class="marquee-item"><img src="images/hexaweigh-wordmark.png" alt="HexaWeigh"></div><div class="marquee-item"><img src="images/hexalog-wordmark.png" alt="HexaLog"></div></div>
+          <div class="marquee-group" aria-hidden="true"><div class="marquee-item"><img src="images/hexafarms-wordmark.png" alt=""></div><div class="marquee-item"><img src="images/hexafleet-wordmark.png" alt=""></div><div class="marquee-item"><img src="images/hexapay-wordmark.png" alt=""></div><div class="marquee-item"><img src="images/hexaweigh-wordmark.png" alt=""></div><div class="marquee-item"><img src="images/hexalog-wordmark.png" alt=""></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap glass reveal" id="contact">
+      <div><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's build something <em>meaningful.</em></h2><p class="body-copy">Have an opportunity, collaboration idea, or a problem that needs a software solution? I'd like to hear from you.</p></div>
+      <div class="contact-actions"><a class="button button-gold" href="mailto:fortuneomondi576@gmail.com" id="email-link">Email Me <span>↗</span></a><button class="button button-outline" id="copy-email">Copy Email</button></div>
+    </section>
+  </main>
+
+  <footer class="footer section-wrap"><span>BUILD <i>/</i> LEARN <i>/</i> GROW</span><div><a href="https://wa.me/254750419440" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.96L2 22l5.2-1.36A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.2 15.02l-.3-.18-3.08.8.82-3-.2-.31A8.1 8.1 0 0 1 12.04 3.8zM8.6 7.4c-.2 0-.5.07-.76.35-.26.28-1 1-1 2.4s1.03 2.8 1.17 3c.15.2 2 3.2 4.9 4.36 2.4.95 2.9.76 3.4.72.52-.05 1.67-.68 1.9-1.34.24-.66.24-1.22.17-1.34-.07-.12-.26-.2-.55-.33-.28-.15-1.67-.82-1.93-.92-.26-.1-.45-.14-.64.14-.19.28-.73.92-.9 1.1-.16.2-.33.22-.6.08-.3-.14-1.2-.44-2.28-1.4-.84-.75-1.4-1.68-1.57-1.96-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.5.14-.16.19-.28.28-.47.1-.19.05-.35-.02-.5-.07-.14-.64-1.55-.88-2.12-.23-.55-.47-.48-.64-.49z"/></svg></a><a href="mailto:fortuneomondi576@gmail.com" aria-label="Email">✉</a></div><small>© <span id="year"></span> Fortune Quinton. Crafted with purpose.</small></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <!-- Tablet (zoom-in dialog) — filled from the <template>s below -->
+  <div class="tablet-overlay" id="tablet-overlay" aria-hidden="true">
+    <div class="tablet" id="tablet" role="dialog" aria-modal="true" aria-labelledby="tablet-title">
+      <div class="tablet-head">
+        <span class="th-logo" id="tablet-logo" hidden><img src="" alt=""></span>
+        <div class="th-text"><p class="eyebrow" id="tablet-eyebrow"></p><h2 id="tablet-title"></h2><p class="th-sub" id="tablet-sub"></p></div>
+        <button type="button" class="tablet-close" id="tablet-close" aria-label="Close">×</button>
+      </div>
+      <div class="tablet-body" id="tablet-body"></div>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <template id="tpl-about" data-eyebrow="ABOUT ME" data-title="About Me">
+    <p class="lead">I'm Fortune Omondi, a self-driven software developer, IT professional, and entrepreneur passionate about building technology that solves real-world problems. My journey is driven by curiosity, continuous learning, and the belief that great software should do more than look good — it should make work easier, improve efficiency, and create meaningful impact.</p>
+    <p>With hands-on experience in IT support, system administration, database management, and software development, I've worked on practical solutions that bridge the gap between technology and everyday business operations. I build applications using technologies such as HTML, CSS, JavaScript, Node.js, and Electron, with a growing focus on creating reliable, user-friendly business management systems.</p>
+    <p>As the founder of HexaNetworks, I'm working toward building a technology ecosystem designed to help African businesses embrace digital transformation through intelligent software, automation, and innovation. Projects such as HexaFarms, HexaPay, and HexaWeigh reflect my commitment to turning ideas into functional solutions.</p>
+    <p>Beyond writing code, I'm a problem-solver, an independent learner, and someone who believes that progress comes from building, experimenting, and improving every day. I'm constantly expanding my skills, taking on new challenges, and working toward becoming a stronger software engineer and technology entrepreneur.</p>
+    <p class="closing">My goal is simple: to build technology that matters, solve problems that count, and create solutions that leave a lasting impact.</p>
+  </template>
+
+  <!-- ============ SKILLS ============ -->
+  <template id="tpl-skills" data-eyebrow="SKILLS & TECHNOLOGIES" data-title="My Skills">
+    <div class="skill-group">
+      <h3>Frontend Development</h3>
+      <p>Building responsive, interactive, and visually polished web interfaces.</p>
+      <ul class="chips"><li data-icon="html5">HTML5</li><li data-icon="css3">CSS3</li><li data-icon="javascript">JavaScript</li><li>Responsive Design</li><li>Glassmorphism UI</li></ul>
+    </div>
+    <div class="skill-group">
+      <h3>Backend &amp; Application Development</h3>
+      <p>Developing application logic, APIs, desktop software, and business systems.</p>
+      <ul class="chips"><li data-icon="nodejs">Node.js</li><li data-icon="express" data-adapt>Express.js</li><li>REST APIs</li><li data-icon="electron">Electron.js</li><li>CRUD Operations</li></ul>
+    </div>
+    <div class="skill-group">
+      <h3>Database Management</h3>
+      <p>Organizing business data, designing tables, and implementing data-driven applications.</p>
+      <ul class="chips"><li data-icon="mysql">MySQL</li><li data-icon="mongodb">MongoDB</li><li>SQL</li><li>Database Design</li><li>Data Management</li></ul>
+    </div>
+    <div class="skill-group">
+      <h3>IT Support &amp; Systems Administration</h3>
+      <p>Troubleshooting hardware, software, networks, and workplace IT systems.</p>
+      <ul class="chips"><li>Hardware Troubleshooting</li><li data-icon="windows8">Windows</li><li data-icon="linux">Linux</li><li>Networking</li><li>System Maintenance</li></ul>
+    </div>
+    <div class="skill-group">
+      <h3>Software Engineering &amp; Tools</h3>
+      <p>Building, testing, packaging, and maintaining practical software solutions.</p>
+      <ul class="chips"><li data-icon="git">Git</li><li data-icon="github" data-adapt>GitHub</li><li data-icon="npm">npm</li><li>Electron Builder</li><li>Debugging</li></ul>
+    </div>
+    <div class="skill-group">
+      <h3>Business &amp; Creative Skills</h3>
+      <p>Combining technology, design, and entrepreneurship to build solutions around real business needs.</p>
+      <ul class="chips"><li>UI/UX Design</li><li>Problem Solving</li><li>Business Automation</li><li>Brand Identity</li><li>Entrepreneurship</li></ul>
+    </div>
+    <h3>My approach</h3>
+    <div class="approach">
+      <div><b>Problem-solving</b>Finding practical solutions to real technical challenges.</div>
+      <div><b>Continuous learning</b>Improving through hands-on projects and experimentation.</div>
+      <div><b>User-focused development</b>Building software around the needs of the people who use it.</div>
+      <div><b>Ownership</b>Taking projects from an idea through implementation, testing, and deployment.</div>
+    </div>
+  </template>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <template id="tpl-experience" data-eyebrow="CAREER" data-title="Professional Experience">
+    <div class="job">
+      <h3>Founder &amp; Software Developer</h3>
+      <p class="where">HexaNetworks &nbsp;|&nbsp; 2026 – Present</p>
+      <p>Building a technology venture focused on developing practical software solutions that help businesses streamline operations, improve efficiency, and embrace digital transformation.</p>
+      <ul class="bullets">
+        <li>Design and develop business management applications for agriculture, payroll, and industrial operations.</li>
+        <li>Build desktop applications using JavaScript, Electron, HTML, CSS, and Node.js.</li>
+        <li>Develop backend services and database integrations using Express.js, MongoDB, and SQL technologies.</li>
+        <li>Design intuitive user interfaces and workflows tailored to real-world business requirements.</li>
+        <li>Manage the software development lifecycle, including planning, implementation, debugging, testing, and application packaging.</li>
+        <li>Explore business automation and AI-driven solutions to address operational challenges facing African businesses.</li>
+      </ul>
+      <p class="tech"><b>Selected Projects:</b> HexaFarms, HexaPay, HexaWeigh, and HexaLog.</p>
+      <a class="link-btn" href="https://hexapaynet.github.io/Hexanet/" target="_blank" rel="noopener noreferrer">Visit HexaNetworks <span>↗</span></a>
+    </div>
+    <div class="job">
+      <h3>IT Support &amp; Software Development</h3>
+      <p class="where">Trident Millers Ltd &nbsp;|&nbsp; December 2025 – Present</p>
+      <p>Supporting business IT operations in an industrial environment while applying technical expertise to system maintenance, troubleshooting, and software development.</p>
+      <ul class="bullets">
+        <li>Diagnose and resolve hardware, software, and workstation issues affecting daily operations.</li>
+        <li>Support IT systems used across departments, including accounts, transport, and weighbridge operations.</li>
+        <li>Assist with database management and structured business data using SQL.</li>
+        <li>Troubleshoot desktop applications and investigate software failures to maintain operational reliability.</li>
+        <li>Develop and improve software solutions that digitize business processes and reduce manual work.</li>
+        <li>Provide technical support and recommendations to improve system reliability.</li>
+      </ul>
+      <p class="tech"><b>Technologies:</b> JavaScript, Electron, HTML, CSS, MySQL, Windows, and IT troubleshooting.</p>
+    </div>
+  </template>
+
+  <!-- ============ PROJECTS ============ -->
+  <template id="tpl-hexafarms" data-eyebrow="FEATURED PROJECT" data-title="HexaFarms" data-sub="Farm Management System · HexaNetworks" data-logo="images/hexafarms-emblem.png" data-status="Completed">
+    <figure class="shot"><img src="images/hexafarms-screenshot.webp" alt="HexaFarms dashboard screenshot" loading="lazy"><figcaption>HexaFarms — farm overview dashboard</figcaption></figure>
+    <p class="lead">A farm management application designed to help farmers manage livestock, track inventory, record harvests, process sales, generate invoices, and monitor farm operations from one place.</p>
+    <h3>Built with</h3>
+    <ul class="chips"><li data-icon="html5">HTML</li><li data-icon="css3">CSS</li><li data-icon="javascript">JavaScript</li><li data-icon="electron">Electron</li><li data-icon="nodejs">Node.js</li></ul>
+    <h3>Key features</h3>
+    <ul class="bullets"><li>Livestock and farm inventory management</li><li>Harvest tracking and sales processing</li><li>Sales records and invoice workflows</li><li>Dashboard, data import/export, and theme options</li></ul>
+  </template>
+
+  <template id="tpl-hexafleet" data-eyebrow="FEATURED PROJECT" data-title="HexaFleet" data-sub="Fleet Management · HexaNetworks" data-logo="images/hexafleet-emblem.png" data-logo-dark data-status="In Development" data-status-type="dev">
+    <figure class="shot"><img src="images/hexafleet-screenshot.webp" alt="HexaFleet dashboard screenshot" loading="lazy"><figcaption>HexaFleet — compliance dashboard (driver names blurred)</figcaption></figure>
+    <p class="lead">A fleet management project aimed at helping businesses organize vehicles, driver assignments, compliance deadlines, and maintenance-related records.</p>
+    <h3>Built with</h3>
+    <ul class="chips"><li data-icon="html5">HTML</li><li data-icon="css3">CSS</li><li data-icon="javascript">JavaScript</li><li data-icon="electron">Electron</li></ul>
+    <h3>Planned functionality</h3>
+    <ul class="bullets"><li>Vehicle and driver records</li><li>Insurance and inspection expiry tracking</li><li>Driving licence and speed governor compliance</li><li>Reminder and notification workflows</li></ul>
+  </template>
+
+  <template id="tpl-hexapay" data-eyebrow="FEATURED PROJECT" data-title="HexaPay" data-sub="HR &amp; Payroll Management · HexaNetworks" data-logo="images/hexapay-emblem.png" data-status="Completed">
+    <figure class="shot"><img src="images/hexapay-screenshot.webp" alt="HexaPay dashboard screenshot" loading="lazy"><figcaption>HexaPay — payroll and workforce overview</figcaption></figure>
+    <p class="lead">A business software project focused on simplifying employee record management and payroll-related operations through a centralized application.</p>
+    <h3>Built with</h3>
+    <ul class="chips"><li data-icon="javascript">JavaScript</li><li data-icon="nodejs">Node.js</li><li data-icon="express" data-adapt>Express.js</li><li data-icon="mongodb">MongoDB Atlas</li><li data-icon="electron">Electron</li></ul>
+    <h3>Project focus</h3>
+    <ul class="bullets"><li>Employee record management</li><li>Payroll and payslip workflows</li><li>Backend services and database integration</li><li>Desktop application development</li></ul>
+  </template>
+
+  <template id="tpl-hexaweigh" data-eyebrow="FEATURED PROJECT" data-title="HexaWeigh" data-sub="Weighbridge Management System · HexaNetworks" data-logo="images/hexaweigh-emblem.png" data-status="Completed">
+    <figure class="shot"><img src="images/hexaweigh-screenshot.webp" alt="HexaWeigh dashboard screenshot" loading="lazy"><figcaption>HexaWeigh — operational dashboard</figcaption></figure>
+    <p class="lead">A desktop software solution developed for weighbridge operations, focused on digitizing weighing records and supporting day-to-day industrial workflows.</p>
+    <h3>Built with</h3>
+    <ul class="chips"><li data-icon="javascript">JavaScript</li><li data-icon="html5">HTML</li><li data-icon="css3">CSS</li><li data-icon="electron">Electron</li></ul>
+    <h3>Project focus</h3>
+    <ul class="bullets"><li>Digital weighbridge operations</li><li>Weighing record management</li><li>Desktop application deployment</li><li>Troubleshooting and operational reliability</li></ul>
+  </template>
+
+  <template id="tpl-hexalog" data-eyebrow="PROJECT" data-title="HexaLog" data-sub="Business logging and record management · HexaNetworks" data-logo="images/hexalog-emblem.png" data-status="In Development" data-status-type="dev">
+    <figure class="shot"><img src="images/hexalog-screenshot.webp" alt="HexaLog dashboard template screenshot" loading="lazy"><figcaption>HexaLog — dashboard template</figcaption></figure>
+    <p class="lead">A software project within the HexaNetworks ecosystem focused on organizing business records and improving operational visibility.</p>
+    <h3>Planned modules</h3>
+    <ul class="bullets"><li>Sales CRM, customers and products</li><li>Inventory and stock movements</li><li>Orders, production, dispatch and transport</li><li>Returns, invoices &amp; payments, documents and reports</li></ul>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
